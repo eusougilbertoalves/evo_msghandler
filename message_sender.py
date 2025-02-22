@@ -1,3 +1,26 @@
+"""
+Autor: Professor Sandeco
+GitHub: https://github.com/sandeco
+YouTube: https://www.youtube.com/@canalsandeco
+Data de Criação: 2024
+
+Descrição:
+    Este módulo implementa a classe MessageSender para envio de mensagens de texto
+    através da Evolution API. O código carrega as variáveis de ambiente necessárias,
+    inicializa o cliente da API e define métodos para enviar mensagens.
+
+Uso:
+    1. Crie um arquivo ".env" na raiz do projeto contendo as seguintes variáveis:
+       - EVO_API_TOKEN: Token de autenticação da API Evolution.
+       - EVO_INSTANCE_NAME: Nome da instância a ser utilizada.
+       - EVO_INSTANCE_TOKEN: Token específico da instância.
+       - EVO_BASE_URL: URL base para conexão com a API.
+    2. Instale as dependências necessárias:
+       - python-dotenv: Para carregar as variáveis de ambiente.
+       - evolutionapi: Cliente para interação com a Evolution API.
+    3. Importe e utilize a classe MessageSender para enviar mensagens de texto.
+"""
+
 import os
 from dotenv import load_dotenv
 from evolutionapi.client import EvolutionClient
